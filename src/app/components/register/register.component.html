@@ -1,0 +1,41 @@
+<!-- <div class="box">
+    <div class="container">
+        
+        <h1>Register</h1>
+        <input placeholder="Firstname" [(ngModel)]='firstname' required>
+        <input placeholder="Lastname" [(ngModel)]='lastname' required>
+        <input placeholder="username" [(ngModel)]='username' required>
+        <input placeholder="password" [(ngModel)]='password' required>
+        <button (click)="register()">Register</button>
+        
+        
+    </div>
+
+</div> -->
+<div class="container">
+    <div class="wrapper">
+      <div class="title"><span>Register Form</span></div>
+      <div class="input1">
+        <div class="row">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="first name" [(ngModel)]='firstname' required>
+        </div>
+        <div class="row">
+          <i class="fas fa-lock"></i>
+          <input type="text" placeholder="last name" [(ngModel)]='lastname' required>
+        </div>
+        <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="text" placeholder="username" [(ngModel)]='username' required>
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" [(ngModel)]='password' required>
+          </div>
+        <div class="row button">
+          <input type="submit" (click)="register()" value="Register">
+        </div>
+        <div class="signup-link">you are a member? <button (click)="navigate()">LogIn now</button></div>
+    </div>
+    </div>
+  </div>

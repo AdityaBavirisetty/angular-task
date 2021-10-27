@@ -1,0 +1,35 @@
+<!-- <div class="box">
+    <div class="box2">
+        <div class="heading">
+            Login Form
+        </div>
+        <div class="input">
+            <input placeholder="username" [(ngModel)]='username' type="text">
+            <input placeholder="password" [(ngModel)]='password' type="password">
+
+        </div>
+    </div>
+
+</div> -->
+
+<div class="container">
+    <div class="wrapper">
+      <div class="title"><span>Login Form</span></div>
+      <div class="input1">
+        <div class="row">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="user name" [(ngModel)]='username' required>
+        </div>
+        <div class="row">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" [(ngModel)]='password' required>
+        </div>
+        
+        <div class="row button">
+          <input type="submit" (click)="sub()" value="Login">
+        </div>
+        <div class="signup-link">Not a member? <button (click)="navigate()">Signup now</button></div>
+    </div>
+    </div>
+  </div>
+ 
